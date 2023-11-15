@@ -3,7 +3,7 @@ import { OpenAIStream, StreamingTextResponse } from 'ai';
 
 // Create an OpenAI API client (that's edge friendly!)
 const config = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(config);
 
@@ -12,6 +12,9 @@ export const runtime = 'edge';
 
 export async function POST(req: Request) {
   const { bio } = await req.json();
+
+console.log(bio);
+console.log(process.env.OPENAI_API_KEY);
 
   // Ask OpenAI for a streaming completion given the prompt
   const response = await openai.createChatCompletion({
