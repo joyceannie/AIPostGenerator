@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     messages: [
       {
         role: 'user',
-        content: `Imagine you have a LInkedIn profile with the details specified in ${bio}. Generate a single viral zero to hero LinkedIn post for ${bio} similar to the contents of Justin Welsh. 
+        content: `Imagine you have a LinkedIn profile with the details specified in ${bio}. Generate a single viral zero to hero LinkedIn post for ${bio} on thought leadership based on the contents of Justin Welsh. 
         You must provide valuable advice, tips, and motivational content. Don't mention the name of Justin Welsh in the post.
         You can use emojis in the post. Here are some examples. You can use the examples as an inspiration, and generate your own content. Include some details from ${bio} into the post. 
         Example1
