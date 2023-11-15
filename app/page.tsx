@@ -41,16 +41,13 @@ export default function Page() {
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
 
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-          Generate your next LinkedIn post using ChatGPT
+          Generate your AI generated LinkedIn post
         </h1>
         <form className="max-w-xl w-full" onSubmit={onSubmit}>
           <div className="flex mt-10 items-center space-x-3">
 
             <p className="text-left font-medium">
-              What kind of post are you looking for?{' '}
-              <span className="text-slate-500">
-                (or write a few sentences about yourself)
-              </span>
+            Write a few wordss about yourself and what kind of post are you looking for?{' '}
             </p>
           </div>
           <textarea
