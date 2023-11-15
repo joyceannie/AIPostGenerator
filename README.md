@@ -15,4 +15,7 @@ pnpm run dev
 
 Goto `http://localhost:3000` to view the page.
 
+## Futrue Works  
+
+The initial approach involved using zero shot learning. Later on, few shot learning was used to improve the results. However,few shot learning is not improving the results as expected. So, we can improve the application by finetunig. 
 
