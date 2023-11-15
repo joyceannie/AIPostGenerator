@@ -47,7 +47,7 @@ export default function Page() {
           <div className="flex mt-10 items-center space-x-3">
 
             <p className="text-left font-medium">
-            Write a few wordss about yourself and what kind of post are you looking for?{' '}
+            Write a few words about yourself and what kind of post are you looking for?{' '}
             </p>
           </div>
           <textarea
