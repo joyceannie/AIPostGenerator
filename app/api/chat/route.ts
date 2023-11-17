@@ -3,7 +3,8 @@ import { OpenAIStream, StreamingTextResponse } from 'ai';
 
 // Create an OpenAI API client (that's edge friendly!)
 const config = new Configuration({
-  apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+  // apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(config);
 
@@ -24,7 +25,7 @@ export async function POST(req: Request) {
         content: `Create a viral post on thought leadership for a user. You can use emojis in the post. 
         Include tips, tricks, or other resources that you think might help. 
         The generated post should have at least 100 words.
-        You should end your post by a sentence asking to follow a linkedin profile. The linkedin profile should be displayed in the form of a hypertext.
+        You should end your post by a sentence asking to follow a linkedin profile. The linkedin profile should be displayed as a clickable hypertext link.
         linkedin profile: """
         ${bio}
         """
