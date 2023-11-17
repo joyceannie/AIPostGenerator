@@ -47,7 +47,7 @@ export default function Page() {
           <div className="flex mt-10 items-center space-x-3">
 
             <p className="text-left font-medium">
-            Write a few words about yourself and what kind of post are you looking for?{' '}
+            Enter your LinkedIn url
             </p>
           </div>
           <textarea
@@ -56,7 +56,7 @@ export default function Page() {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              'e.g. Entrepreneur looking for innovative ideas.'
+              'e.g. Enter your social media url.'
             }
           />
           {!isLoading && (
