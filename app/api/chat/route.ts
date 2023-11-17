@@ -13,6 +13,9 @@ export const runtime = 'edge';
 export async function POST(req: Request) {
   const { bio } = await req.json();
 
+
+  console.log(process.env.NEXT_PUBLIC_OPENAI_API_KEY);
+
   // Ask OpenAI for a streaming completion given the prompt
   const response = await openai.createChatCompletion({
     model: 'ft:gpt-3.5-turbo-0613:personal::8LRsihbM',
