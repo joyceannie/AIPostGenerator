@@ -1,6 +1,6 @@
 # AI Post Generator
 
-This is an app to generate viral LinkedIn posts on thought leadership. The app takes the form input to create a prompt, and generates the post. The post is generated using [openAI](https://openai.com/api/). Few shot learning is used to generate the post. In order to provide the examples for few shot learning, data is collected from viral LinkedIn posts from top entrepreneurial voices. A better approach is to finetune a model to generate the post so that you get more relevant content. The application is deployed using [Vercel AI SDK](https://sdk.vercel.ai/docs).
+This is an application to generate viral LinkedIn posts on thought leadership. The app takes the form input to create a prompt, and generates the post. The post is generated using [openAI](https://openai.com/api/). Initially, the post was created using zero shot learning. Then, few shot learning was tried. In order to provide the examples for few shot learning, data is collected from viral LinkedIn posts from top entrepreneurial voice  Justin Welsh. Later on, a finetuned a model was tried. The final version is using a finetuned model. The application is deployed using [Vercel AI SDK](https://sdk.vercel.ai/docs).
 
 ![alt text][logo]
 
@@ -17,7 +17,9 @@ Goto `http://localhost:3000` to view the page.
 
 ## Futrue Works  
 
-* The initial approach involved using zero shot learning. Later on, few shot learning was used to improve the results. However,few shot learning is not improving the results as expected. We might be able to improve the results by creating better prompts and better examples. 
+* The quality of the output depends on the prompt used. The prompt was edited several times to improve the outputs generated. This can be further improved.
 
-* Another approach to improve the model invovles finetunig. 
+* As of now, we are using a finetuned model which was trained using 30 data points. The model can be improved further by finetuning using more data.
+
+* As of now, only human evaluation is done for the model. A better approach is to use a hybrid evaluation model.   
 
