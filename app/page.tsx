@@ -99,7 +99,7 @@ export default function Page() {
               </div>
               <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
                 <div
-                  className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 cursor-copy border"
+                  className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 cursor-copy border post-output"
                   onClick={() => {
                     navigator.clipboard.writeText(generatedBios);
                     toast('Bio copied to clipboard', {
